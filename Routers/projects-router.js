@@ -42,6 +42,22 @@ router.get("/:id", validateId, (req, res) => {
   }
 });
 
+router.get("/:id/actions", validateId, (req, res) => {
+  Projects.getProjectActions(req.id)
+    .then((item) => {
+      if (item.length !== 0) {
+        res.status(200).json(item);
+      } else {
+        res
+          .status(500)
+          .json({ errorMessage: "Couldnt find any action for this project" });
+      }
+    })
+    .catch((err) => {
+      res.status(500).json({ errorMessage: "Server Error" });
+    });
+});
+
 router.put("/:id", validateId, (req, res) => {
   if (req.body.name && req.body.description) {
     const newProject = {
