@@ -1,0 +1,19 @@
+
+
+.App {
+  text-align: center;
+}
+.linkCls{
+  text-decoration: none;
+  color: white;
+}
+
+.cardSection{
+  padding: 5rem;
+  background-color:#F5F5F5 ;
+  min-height: 72vh;
+  
+}
+.cardCont{
+  margin: 1rem;
+}

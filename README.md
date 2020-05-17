@@ -40,13 +40,22 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 - [ ] Mention two parts of Express that you learned about this week.
 
+   Using router we can organize the code and easy to read also easy to update any changes for later. using middleware we can add extra functionality to our application 
+
 - [ ] Describe Middleware?
+
+Middleware is a function that provides to ability of adding more functionality to our application.Also provide to extend the feature of express.
 
 - [ ] Describe a Resource?
 
+Resource is a data can manage by end-points and with endpoint can send data like URL http methods status etc. and we can res.send() res.status we can use with many ways 
+
 - [ ] What can the API return to help clients know if a request was successful?
 
+we can send to status code 200 
+
 - [ ] How can we partition our application into sub-applications?
+one example is to use express router 
 
 ## Minimum Viable Product
 
